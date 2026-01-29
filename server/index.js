@@ -1,8 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const fs = require("fs");
 
 const app = express();
+const db = JSON.parse(fs.readFileSync("./db/sampleData.json", "ascii"));
 const PORT = process.env.PORT || 8791;
 
 app.use(cors());
@@ -20,8 +22,19 @@ app.use(
   )
 );
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   res.send("Hello, Express!");
+});
+
+// Sample API endpoint
+app.get("/api/users/:id", (req, res) => {
+  const id = req.params.id;
+  const user = db.users.find((user) => user.userId === id);
+  if (user) {
+    res.json(user);
+  } else {
+    res.status(404).json({ error: "User not found." });
+  }
 });
 
 app.listen(PORT, () => {

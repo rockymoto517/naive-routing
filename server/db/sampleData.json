@@ -1,0 +1,46 @@
+{
+	"users": [
+	  {
+		"userId": "1001",
+		"firstName": "Alex",
+		"lastName": "Morales",
+		"createdAt": "2024-11-03T14:22:11Z"
+	  },
+	  {
+		"userId": "1002",
+		"firstName": "Jordan",
+		"lastName": "Nguyen",
+		"createdAt": "2024-11-05T09:41:58Z"
+	  },
+	  {
+		"userId": "1003",
+		"firstName": "Priya",
+		"lastName": "Patel",
+		"createdAt": "2024-11-06T18:07:32Z"
+	  },
+	  {
+		"userId": "1004",
+		"firstName": "Ethan",
+		"lastName": "Brooks",
+		"createdAt": "2024-11-08T02:55:19Z"
+	  },
+	  {
+		"userId": "1005",
+		"firstName": "Sofia",
+		"lastName": "Ramirez",
+		"createdAt": "2024-11-09T16:30:44Z"
+	  },
+	  {
+		"userId": "1006",
+		"firstName": "Liam",
+		"lastName": "O'Connor",
+		"createdAt": "2024-11-11T11:12:03Z"
+	  },
+	  {
+		"userId": "1007",
+		"firstName": "Hannah",
+		"lastName": "Kim",
+		"createdAt": "2024-11-13T20:48:27Z"
+	  }
+	]
+}
